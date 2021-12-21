@@ -1,32 +1,20 @@
 import React from 'react'
-import FinancialHealth from './components/FinancialHealth'
-import MyGoals from './components/MyGoals'
+import Dashboard from './Dashboard'
 
-import QuickStats from './components/QuickStats'
 const App = () => {
    return (
-      <>
-         <div>
-            <div className="md:flex items-center p-4 lg:p-0">
-               <div className="w-1/2 mx-4">
-                  <QuickStats />
-               </div>
-               <div className="w-1/2 mx-4">
-                  <FinancialHealth />
-               </div>
-            </div>
-            <div className="md:flex items-center p-4 lg:p-0">
-               <div className='w-1/2 mx-4'>
+      <div className='flex h-full  bg-green-900'>
+         <div className="w-96">
 
-               </div>
-               <div className="w-1/2 mx-4">
+         {/* Navbar code Starts here */}
 
-               <MyGoals />
-               </div>
-            </div>
+
          </div>
-      </>
+     
+
+         <Dashboard />
+      </div>
    )
 }
-export default App
 
+export default App

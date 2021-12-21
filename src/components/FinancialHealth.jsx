@@ -15,7 +15,7 @@ const FinancialHealth = () => {
                   <ProgressCard done='30' />
                </div>
                <div className="border-t p-2 text-center">
-                  <small className="text-xs">
+                  <small className="text-xxs">
                      Your financial health status is <span className='text-green-700 font-bold uppercase'>Good</span>. However there’s still room for improvement. <a className='text-blue-700 underline' href="#"> See how you can improve</a>
                   </small>
                </div>
