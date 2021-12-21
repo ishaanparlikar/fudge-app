@@ -64,14 +64,14 @@ const Performance = () => {
 
    return (
       <div>
-         <div className='flex justify-between items-center'>
-            <h1 className="font-bold text-base w-1/2">My Performance</h1>
+         <div className='lg:flex justify-between items-center'>
+            <h1 className="font-bold text-base lg:w-1/2">My Performance</h1>
 
             <div className='flex justify-between w-1/2'>
-               <button className={`py-2 px-3 hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>Weekly</button>
-               <button className={`py-2 px-3 hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>Monthly</button>
-               <button className={`py-2 px-3 hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>Yearly</button>
-               <button className={`py-2 px-3 hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>All Time</button>
+               <button className={`lg:text-base text-sm lg:py-2 lg:px-3 p-2 min-w-fit  hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>Weekly</button>
+               <button className={`lg:text-base text-sm lg:py-2 lg:px-3 p-2 min-w-fit  hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>Monthly</button>
+               <button className={`lg:text-base text-sm lg:py-2 lg:px-3 p-2 min-w-fit  hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>Yearly</button>
+               <button className={`lg:text-base text-sm lg:py-2 lg:px-3 p-2 min-w-fit  hover:bg-gray-200 rounded-t-full rounded-b-full ${toggle ? 'bg-gray-200' : ''}`}>All Time</button>
             </div>
          </div>
          <div className="h-72">

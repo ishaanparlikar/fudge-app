@@ -5,7 +5,7 @@ const FinancialHealth = () => {
    return (
       <>
          <div className='w-full'>
-            <div className='flex justify-between items-center'>
+            <div className='lg:flex text-center  mb-5 lg:mb-0 justify-between items-center'>
                <h5 className="font-bold text-base">My Financial Health</h5>
                <Button text='View Financial Health' />
             </div>
