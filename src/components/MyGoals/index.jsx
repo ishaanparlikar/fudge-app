@@ -10,7 +10,7 @@ const MyGoals = () => {
 
             <Button text='View All Goals' />
          </div>
-         <div className="grid lg:grid-cols-3 place-items-center gap-5">
+         <div className="grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5">
             <GoalCard title='Retirement' amount={123456} total={20000000} done={80} />
             <GoalCard title='Vacation Home' amount={123456} total={20000000} done={40} />
             <GoalCard title='Travel' amount={123456} total={20000000} done={100} />

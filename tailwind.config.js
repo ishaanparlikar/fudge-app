@@ -9,6 +9,9 @@ module.exports = {
        },
        fontSize:{
           'xxs':'12px',
+       },
+       screens:{
+          'tab':{'max':'1024px'},
        }
     },
   },

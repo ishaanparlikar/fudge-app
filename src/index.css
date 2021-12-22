@@ -50,14 +50,14 @@ code {
    height: 10px;
    border-top-left-radius:50px ;
    border-top-right-radius:50px ;
-   background-color:green ;
+   background-color:#70c053 ;
    right: 0;
 }
 .progress .poor{
    color: red;
 }
 .progress .good{
-   color: green;
+   color: #70c053;
 }
 .progress .average{
    color: orange;
@@ -73,4 +73,9 @@ code {
 .CircularProgressbar-path{
    animation: circular-bar 2s linear;
 }
- 
+
+hr{
+   border-top: 1px solid #ccc;
+   height: 1px;
+   width: 100%;
+}

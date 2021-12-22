@@ -12,7 +12,9 @@ const FinancialHealth = () => {
             <div className="max-w-3xl bg-white shadow-full mt-3 rounded-md w-full flex flex-col justify-between">
                <div className="px-8 py-2 mb-1">
 
-                  <ProgressCard done='30' />
+                  <ProgressCard done='78' />
+
+
                </div>
                <div className="border-t p-2 text-center">
                   <small className="text-xxs">
