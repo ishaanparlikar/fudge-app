@@ -7,7 +7,7 @@ const AvatarComments = ({name, status, comment, duration}) => {
          <div>
             <div className='flex items-center my-3'>
                <div className='rounded-full relative'>
-                  <img className='rounded-full border-2 border-black' src="https://picsum.photos/50" alt="Avatar" />
+                  <img className='rounded-full border-2 border-black' src="/src/img/profile.jpg" alt="Avatar" />
 
                   <span className="text-xs text-gray-500 absolute bottom-0 right-0">
                      <span className={`${status ? 'text-green-600' : ''} mr-1`}>

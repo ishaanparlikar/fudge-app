@@ -4,7 +4,7 @@ const Avatar = ({name,status}) => {
    return (
       <div className='flex items-center my-3'>
          <div className='rounded-full'>
-            <img className='rounded-full' src="https://picsum.photos/65" alt="Avatar" />
+            <img className='rounded-full' src="/src/img/profile.jpg" alt="Avatar" />
          </div>
 
          <div className='ml-3'>

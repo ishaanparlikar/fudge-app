@@ -6,7 +6,7 @@ const TopBar = ({user}) => {
 
          <div className="row flex items-center justify-between my-4 lg:mx-4">
             <div className='inline-flex items-center'>
-               <img className='rounded-full mr-2' src="https://picsum.photos/55" alt="" />
+               <img className='rounded-full mr-2' src="/src/img/profile.jpg" alt="" />
 
                <p className='font-light'>Welcome , <span className="font-bold">{user}</span> Here is your Dashboard</p>
             </div>

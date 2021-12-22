@@ -4,6 +4,13 @@
    }
  }
 
+ .main-bg{
+    background-color: #003b14d9;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 .main-bg-img {
     background: url('../img/dan-asaki-0uLVXFz6obg-unsplash@2x.png') no-repeat center center / cover;
   z-index: 3;

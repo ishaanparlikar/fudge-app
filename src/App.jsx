@@ -1,24 +1,25 @@
-import React from 'react'
+import {React} from 'react'
 import Dashboard from './Dashboard'
-import FirstScreen from './components/FirstScreen'   
-import HomepageText from './components/HomepageText'
+import FirstScreen from './components/FirstScreen'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Sidebar from './components/Sidebar'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import { useLocation } from 'react-router'
 const App = () => {
+   // const location = useLocation()
+ 
    return (
       <>
-      {/* <div className='lg:flex h-full  bg-green-900'> */}
-         {/* <div className="w-96"> */}
+               <Routes>
+                  <Route path="/" element={<FirstScreen />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
+               </Routes>
+{/* 
+            <CSSTransition classNames="slide" timeout={2000}>
+               <Dashboard/>
+            </CSSTransition> */}
+         
 
-         {/* Navbar code Starts here */}
-
-
-         {/* </div> */}
-     
-
-         {/* <Dashboard /> */}
-      {/* </div> */}
-
-         <FirstScreen/>
-         {/* <HomepageText/> */}
       </>
    )
 }

@@ -17,12 +17,7 @@ code {
     monospace;
 }
 .progress {
-  background-image: linear-gradient(
-   to right,
-   red,
-   yellow,
-   #70c053
- );
+  background-image: linear-gradient(to right, red, yellow, #70c053);
   border-radius: 20px;
   position: relative;
   margin: 15px 0;
@@ -31,7 +26,7 @@ code {
 }
 
 .progress-done {
-   position: relative;
+  position: relative;
   color: black;
   display: flex;
   align-items: center;
@@ -41,41 +36,69 @@ code {
   opacity: 0;
   transition: 1s ease 0.3s;
 }
-.progress-done::after{
-   content: '';
-   color: black;
-   position: absolute;
-   top:-10px;
-   width: 10px;
-   height: 10px;
-   border-top-left-radius:50px ;
-   border-top-right-radius:50px ;
-   background-color:#70c053 ;
-   right: 0;
+.progress-done::after {
+  content: "";
+  color: black;
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #70c053;
+  right: 0;
 }
-.progress .poor{
-   color: red;
+.progress .poor {
+  color: red;
 }
-.progress .good{
-   color: #70c053;
+.progress .good {
+  color: #70c053;
 }
-.progress .average{
-   color: orange;
+.progress .average {
+  color: orange;
 }
 @keyframes circular-bar {
   0% {
-   opacity: 0;
+    opacity: 0;
   }
   100% {
-  opacity: 1;
+    opacity: 1;
   }
 }
-.CircularProgressbar-path{
-   animation: circular-bar 2s linear;
+.CircularProgressbar-path {
+  animation: circular-bar 2s linear;
 }
 
-hr{
-   border-top: 1px solid #ccc;
-   height: 1px;
-   width: 100%;
+hr {
+  border-top: 1px solid #ccc;
+  height: 1px;
+  width: 100%;
+}
+
+
+/* .dashboard-enter {
+  opacity: 0;
+  height: 0;
+}
+.dashboard-enter-active {
+   opacity: 1;
+   height: 100%;
+   transition: all 2s ease; 
+} */
+
+.slide-enter,
+.slide-exit {
+   transition: opacity 1000ms ease-out;
+}
+
+.slide-enter {
+   /* transform: translateX(100%); */
+   opacity: 0;
+}
+
+.slide-enter.slide-enter-active {
+   opacity: 1;
+   transition: opacity 1000ms ease-out;
+  /* transform: translateX(0%); */
+
 }
