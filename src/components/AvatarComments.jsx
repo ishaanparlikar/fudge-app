@@ -1,13 +1,13 @@
 import React from 'react'
 import propTypes from 'prop-types'
-
+import AvatarImg from '../img/profile.jpg'
 const AvatarComments = ({name, status, comment, duration}) => {
    return (
       <>
          <div>
             <div className='flex items-center my-3'>
                <div className='rounded-full relative'>
-                  <img className='rounded-full border-2 border-black' src="/src/img/profile.jpg" alt="Avatar" />
+                  <img className='rounded-full border-2 border-black' src={AvatarImg} alt="Avatar" />
 
                   <span className="text-xs text-gray-500 absolute bottom-0 right-0">
                      <span className={`${status ? 'text-green-600' : ''} mr-1`}>

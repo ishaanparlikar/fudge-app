@@ -1,10 +1,10 @@
 import React from 'react'
-
+import AvatarImg from '../img/profile.jpg'
 const Avatar = ({name,status}) => {
    return (
       <div className='flex items-center my-3'>
          <div className='rounded-full'>
-            <img className='rounded-full' src="/src/img/profile.jpg" alt="Avatar" />
+            <img className='rounded-full' src={AvatarImg} alt="Avatar" />
          </div>
 
          <div className='ml-3'>

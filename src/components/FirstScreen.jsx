@@ -2,6 +2,8 @@ import { React, useState, useEffect } from "react";
 import "../css/FirstScreen.css";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Link } from 'react-router-dom'
+import Logo from '../img/Group 1@2x.png'
+import downArrow from '../img/arrow-down-24@2x.png'
 import { ClipLoader } from "react-spinners";
 const FirstScreen = () => {
    const [loading, setLoading] = useState(false)
@@ -26,7 +28,7 @@ const Header = () => {
    const [show, setShow] = useState(false);
    return (
       <div className={`main-bg-img w-full h-screen flex flex-col items-center justify-center ${show ? 'moveit' : ''} `}>
-         <img height="52" width="160" className="mb-6" src="/src/img/Group 1@2x.png" alt="" />
+         <img height="52" width="160" className="mb-6" src={Logo} alt="" />
 
          <CSSTransition
             in={show}
@@ -49,7 +51,7 @@ const Header = () => {
          {show == false && (
 
             <a onClick={() => setShow(true)} href="#" className="absolute bottom-10 z-10">
-               <img height="20" width="20" src="/src/img/arrow-down-24@2x.png" alt="" />
+               <img height="20" width="20" src={downArrow} alt="" />
             </a>
          )}
       </div>
