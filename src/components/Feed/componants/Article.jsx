@@ -8,7 +8,7 @@ const Article = ({ title, description, linkUrl }) => {
          </span>
          <h4 className="font-bold text-md mb-2">{title}</h4>
          <p className='mb-2'>{description}</p>
-         <a href={linkUrl} className='text-blue-600 underline mb-2'>Read Full Article</a>
+         <a href={`${linkUrl}`} className='text-blue-600 underline mb-2 cursor-pointer'>Read Full Article</a>
       </div>
    )
 }

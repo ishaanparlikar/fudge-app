@@ -21,7 +21,7 @@ const Feed = () => {
          <div className='mt-7'>
 
             {currentPosts.map(post => (
-               <Article key={post.id} title={post.title} description={post.description} url='#' />
+               <Article key={post.id} title={post.title} description={post.description} linkUrl='#' />
 
                ))}
                <Pagination pageNum={currentPage}  postPerPage={postPerPage} totalPosts={posts.length} paginate={paginate}/>
