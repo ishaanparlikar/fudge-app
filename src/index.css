@@ -132,17 +132,16 @@ hr {
 
    width: 20px;
    height: 10px;
-   overflow: hidden;
    margin: auto;
    top: 50%;
    left: 45%;
    right: 45%;
-   animation: startDashboard 1s linear forwards;
+   animation: startDashboard .6s linear forwards;
 }
  .dashboard >div{
    opacity: 0;
    transition: all .5s ease-in-out;
-   transition-delay: 1s;
+   transition-delay: .5s;
 } 
 
 .dashboard.active > div{
@@ -153,7 +152,7 @@ hr {
    opacity: 1;
    width: inherit;
    left: 0;
-   animation: loadDashboard .8s linear forwards;
+   animation: loadDashboard .4s linear forwards;
 }
 
 

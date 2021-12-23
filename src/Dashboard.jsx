@@ -16,10 +16,7 @@ const Dashboard = () => {
    useEffect(() => {
       setTimeout(() => {
          setActive(true)
-      }, 1000);
-      setTimeout(() => {
-         setShowDash(true)
-      }, 400);
+      }, 600);
    }, [])
    return (
       <>
@@ -35,7 +32,7 @@ const Dashboard = () => {
             <div className='xl:py-6 pt-20 w-full z-20 relative'>
                <div className={`absolute bg-white  dashboard h-full overflow-scroll ${active ? 'active' : ''}`}>
 
-                  <div className={`${showDash ? 'showDash' : ''}`}>
+                  <div>
                      <TopBar user='John Doe' />
 
                      <div className="row flex inner-dashboard  items-center mx-4 my-8">
