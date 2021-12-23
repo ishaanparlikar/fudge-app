@@ -1,24 +1,44 @@
 @keyframes mymove {
-   100% {
-      background-position: center 60%;
-   }
- }
-
- .main-bg{
-    background-color: #003b14d9;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
-.main-bg-img {
-    background: url('../img/dan-asaki-0uLVXFz6obg-unsplash@2x.png') no-repeat center center / cover;
-  z-index: 3;
-  position: relative;
-  /* animation: mymove 2s forwards; */
+  100% {
+    background-position: center 60%;
+  }
 }
-.main-bg-img.moveit{
-   animation: mymove 2s forwards;
+
+.main-bg {
+  background-color: #003b14d9;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1300px) {
+  .main-bg-img {
+    background: url("../img/dan-asaki-0uLVXFz6obg-unsplash@2x.png") no-repeat
+      center center / cover;
+    z-index: 3;
+    position: relative;
+    /* animation: mymove 2s forwards; */
+  }
+  .main-bg-img::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+   background: radial-gradient(
+     circle,
+     rgba(2, 54, 20, 0.9) 99%,
+     #003b14d9 66.59%,
+     rgba(42, 60, 68, 0.6) 99.98%
+   );
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 2;
+ }
+}
+.main-bg-img.moveit {
+  animation: mymove 2s forwards;
 }
 .main-bg-img img {
   /* width: 100%; */
@@ -27,33 +47,14 @@
 }
 
 
-.main-bg-img::after{
-   position: absolute;
-   content: '';
-   width: 100%;
-   height: 100%;
-   background:radial-gradient(
-      circle,
-      rgba(2, 54, 20, 0.9) 99%,
-      #003b14d9 66.59%,
-      rgba(42, 60, 68, 0.6) 99.98%
-    );
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-   z-index: 2;
-}
-.main-bg-img img{
-   z-index: 10;
+.main-bg-img img {
+  z-index: 10;
 }
 
 .alert-enter {
   transform: translateY(30vh);
-  transition: all 2s ease;
- }
- .alert-enter-active {
-   transform: translateX(0%);
- }
-
-
+  transition: all 1.5s ease;
+}
+.alert-enter-active {
+  transform: translateX(0%);
+}

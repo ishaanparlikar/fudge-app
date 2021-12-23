@@ -37,7 +37,7 @@ const Header = () => {
             unmountOnExit
          >
             <div className="z-10 flex flex-col items-center">
-               <h1 className="text-6xl font-bold text-white mb-8">All your finances in one place.</h1>
+               <h1 className="xl:text-6xl text-3xl text-center xl:text-left  font-bold text-white mb-8">All your finances in one place.</h1>
                <p className="text-center text-gray-400 mb-8">
                   Find out how our team of highly qualified financial consultants can help you achieve your financial goals.
                </p>

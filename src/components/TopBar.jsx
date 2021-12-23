@@ -4,7 +4,7 @@ const TopBar = ({user}) => {
    return (
       <>
 
-         <div className="row flex items-center justify-between my-4 lg:mx-4">
+         <div className="row flex xl:flex-row flex-col items-center justify-between my-4 lg:mx-4">
             <div className='inline-flex items-center'>
                <img className='rounded-full mr-2' src="/src/img/profile.jpg" alt="" />
 
@@ -17,10 +17,7 @@ const TopBar = ({user}) => {
             </div>
          </div>
 
-         <div className="row flex items-center lg:mx-4 my-8">
-            <h1 className="text-2xl w-56">Dashboard Home</h1>
-            <hr />
-         </div>
+       
 
       </>
    )
