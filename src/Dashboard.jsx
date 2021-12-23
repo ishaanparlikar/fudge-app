@@ -21,18 +21,20 @@ const Dashboard = () => {
    return (
       <>
          <div className="xl:flex h-screen main-bg-img2">
+            <div className="w-72">
 
-            {/* {active ?
+               {active ?
 
+                  <Sidebar />
 
-               : ''} */}
+                  : ''}
 
-            <Sidebar />
+            </div>
 
-            <div className='xl:py-6 pt-20 w-full z-20 relative'>
-               <div className={`absolute bg-white  dashboard h-full overflow-scroll ${active ? 'active' : ''}`}>
+            <div className='xl:py-6 pt-20 w-full xl:z-20 z-10 relative'>
+               <div className={`xl:absolute  bg-white  dashboard h-full xl:overflow-scroll ${active ? 'active' : ''}`}>
 
-                  <div>
+                  <div className='xl:mx-7'>
                      <TopBar user='John Doe' />
 
                      <div className="row flex inner-dashboard  items-center mx-4 my-8">
@@ -61,15 +63,15 @@ const Dashboard = () => {
 
 
                      <div className="xl:flex items-start p-4 lg:p-0 my-4 lg:mb-10">
-                        <div className='xl:w-1/2 tab:w-full lg:mx-4 mb-5 xl:mb-0  max-h-96 overflow-scroll'>
+                        <div className='xl:w-1/2 tab:w-full lg:mx-4 mb-5 xl:mb-0  h-96 overflow-scroll'>
                            <Feed />
                         </div>
                         <div className="xl:w-1/2 lg:mx-4 md:flex h-full">
-                           <div className='md:w-1/2 md:mr-4  mb-5 xl:mb-0 max-w-sm  overflow-scroll  max-h-96'>
+                           <div className='md:w-1/2 md:mr-4  mb-5 xl:mb-0 max-w-sm  overflow-scroll  max-h-96  border border-gray-200 rounded-lg'>
                               <TopComments />
                            </div>
 
-                           <div className='md:w-1/2 w-full  md:ml-4  mb-5 lg:mb-0  max-h-96  overflow-scroll'>
+                           <div className='md:w-1/2 w-full  md:ml-4  mb-5 lg:mb-0  max-h-96  overflow-scroll border border-gray-200 rounded-lg'>
                               <Users />
                            </div>
                         </div>

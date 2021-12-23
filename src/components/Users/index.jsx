@@ -4,7 +4,7 @@ const Users = () => {
    return (
       <>
 
-      <div className='p-6 border border-gray-200 rounded-lg'>
+      <div className='p-6'>
          <h4 className="font-bold">Users</h4>
          
             <div>

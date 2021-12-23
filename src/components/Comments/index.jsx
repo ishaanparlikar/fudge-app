@@ -3,7 +3,7 @@ import AvatarComments from '../AvatarComments'
 const TopComments = () => {
    return (
       <>
-         <div className='p-6 border border-gray-200 rounded-lg'>
+         <div className='p-6'>
             <h4 className="font-bold">Top Comments</h4>
 
             <AvatarComments

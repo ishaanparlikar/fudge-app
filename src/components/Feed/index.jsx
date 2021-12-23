@@ -1,28 +1,30 @@
-import React from 'react'
+import {React,useState} from 'react'
 import Article from './componants/Article'
-
+import PostData from '../../posts.json'
+import Pagination from './componants/Pagination'
 const Feed = () => {
+      const [posts, setPosts] = useState(PostData)
+      const [currentPage,useCurrentPage] = useState(1)
+      const [postPerPage,setPostPerPage] = useState(2)
+
+      const indexOfLastPost = currentPage * postPerPage
+      const indexOfFirstPost = indexOfLastPost - postPerPage
+      const currentPosts = posts.slice(indexOfFirstPost,indexOfLastPost)
+
+      const paginate = (pageNumber) => {
+         useCurrentPage(pageNumber)
+      }
    return (
 
-      <div className='p-6 border border-gray-200 rounded-lg'>
+      <div className='p-6 border border-gray-200 rounded-lg h-full'>
          <h4 className="font-bold">Industry News</h4>
          <div className='mt-7'>
 
-            <Article
-               title='The Future of Work'
-               description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum numquam, rem quisquam molestiae ullam quos in nulla tenetur eligendi optio nemo illum nobis facere ducimus. Illum voluptatum cumque vel.'
-               url='#'
-            />
-            <Article
-               title='The Future of Work'
-               description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum numquam, rem quisquam molestiae ullam quos in nulla tenetur eligendi optio nemo illum nobis facere ducimus. Illum voluptatum cumque vel.'
-               url='#'
-            />
-            <Article
-               title='The Future of Work'
-               description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatum numquam, rem quisquam molestiae ullam quos in nulla tenetur eligendi optio nemo illum nobis facere ducimus. Illum voluptatum cumque vel.'
-               url='#'
-            />
+            {currentPosts.map(post => (
+               <Article key={post.id} title={post.title} description={post.description} url='#' />
+
+               ))}
+               <Pagination pageNum={currentPage}  postPerPage={postPerPage} totalPosts={posts.length} paginate={paginate}/>
          </div>
       </div>
    )

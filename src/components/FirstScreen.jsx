@@ -22,12 +22,14 @@ const FirstScreen = () => {
          </div>
       </>
    );
+   
+
 };
 
 const Header = () => {
    const [show, setShow] = useState(false);
    return (
-      <div className={`main-bg-img w-full h-screen flex flex-col items-center justify-center ${show ? 'moveit' : ''} `}>
+      <div onClick={()=>setShow(true)} className={`cursor-pointer main-bg-img w-full h-screen flex flex-col items-center justify-center ${show ? 'moveit' : ''} `}>
          <img height="52" width="160" className="mb-6" src={Logo} alt="" />
 
          <CSSTransition

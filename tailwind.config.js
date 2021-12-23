@@ -11,6 +11,9 @@ module.exports = {
          fontSize: {
             'xxs': '12px',
          },
+         color:{
+            'darkGreen': '#033715',
+         },
          screens: {
             'tab': { 'max': '1024px' },
             'laptop': { 'max': '1675px' },
