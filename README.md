@@ -8,7 +8,7 @@
 
 ### To Build
 
-1. Install Node Dependancies (npm i)
-2. Run Locally (npm run dev)
-3. To Build and preview (npm run build  & npm run preview)
+1. Install Node Dependancies **(npm i)**
+2. Run Locally **(npm run dev)**
+3. To Build and preview **(npm run build  & npm run preview)**
 
